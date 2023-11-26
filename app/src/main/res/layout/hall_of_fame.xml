@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hall of Fame"
+        android:textSize="18sp"
+        android:textColor="#DADADA"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- First set of views -->
+    <!-- Circular picture below the title -->
+    <ImageView
+        android:id="@+id/profileImage1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/prof"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentStart="true"/>
+
+    <!-- Name below the title and circular picture -->
+    <TextView
+        android:id="@+id/nameTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textSize="18sp"
+        android:textColor="#DADADA"
+        android:layout_below="@id/titleTextView"
+        android:layout_toEndOf="@id/profileImage1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- School name below the title, circular picture, and name -->
+    <TextView
+        android:id="@+id/schoolTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="School Name"
+        android:textSize="14sp"
+        android:textColor="#DADADA"
+        android:layout_below="@id/nameTextView1"
+        android:layout_toEndOf="@id/profileImage1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Second set of views -->
+    <!-- Circular picture below the first set -->
+    <ImageView
+        android:id="@+id/profileImage2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/prof"
+        android:layout_below="@id/profileImage1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentStart="true"/>
+
+    <!-- Name below the first set and circular picture -->
+    <TextView
+        android:id="@+id/nameTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jane Doe"
+        android:textSize="18sp"
+        android:textColor="#DADADA"
+        android:layout_below="@id/profileImage1"
+        android:layout_toEndOf="@id/profileImage2"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- School name below the first set, circular picture, and name -->
+    <TextView
+        android:id="@+id/schoolTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Another School"
+        android:textColor="#DADADA"
+        android:textSize="14sp"
+        android:layout_below="@id/nameTextView2"
+        android:layout_toEndOf="@id/profileImage2"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Third set of views -->
+    <ImageView
+        android:id="@+id/profileImage3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/prof"
+        android:layout_below="@id/profileImage2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/nameTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Third Person"
+        android:textSize="18sp"
+        android:textColor="#DADADA"
+        android:layout_below="@id/profileImage2"
+        android:layout_toEndOf="@id/profileImage3"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/schoolTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yet Another School"
+        android:textSize="14sp"
+        android:textColor="#DADADA"
+        android:layout_below="@id/nameTextView3"
+        android:layout_toEndOf="@id/profileImage3"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+
+
+
+
+
+
+</RelativeLayout>
