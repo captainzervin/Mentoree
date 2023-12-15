@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <!-- Header Layout -->
+        <RelativeLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <!-- Profile Image Frame -->
+            <FrameLayout
+                android:id="@+id/profileImageFrame"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/prof" />
+            </FrameLayout>
+
+            <!-- Profile Information StackLayout -->
+            <LinearLayout
+                android:id="@+id/profileInfoLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/profileImageFrame"
+                android:layout_marginTop="13dp"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:id="@+id/profileNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maria Sofia Castro"
+                    android:textColor="#DADADA"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/profileRoleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STI Dasmarinas"
+                    android:textColor="#DADADA"/>
+
+                <TextView
+                    android:id="@+id/profileDescriptionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description goes here..."
+                    android:textColor="#DADADA"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Divider BoxView -->
+        <View
+            android:id="@+id/dividerView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8C5CB3"
+            android:layout_below="@id/headerLayout"/>
+
+        <!-- Scrollable Content Section -->
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/dividerView">
+
+            <!-- Content StackLayout -->
+            <LinearLayout
+                android:id="@+id/contentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Row 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Row 1"
+                        android:textSize="20sp"
+                        android:textColor="#DADADA"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"/>
+
+                    <!-- Horizontal ScrollView for Row 1 Images -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!-- Horizontal StackLayout for Row 1 Images -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!-- Frame for Image 1 -->
+                            <FrameLayout
+                                android:layout_width="200dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:background="@android:color/black">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/image1"
+                                    android:scaleType="centerCrop"/>
+                            </FrameLayout>
+
+                            <!-- Frame for Image 2 -->
+                            <FrameLayout
+                                android:layout_width="200dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:background="@android:color/black">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/image2"
+                                    android:scaleType="centerCrop"/>
+                            </FrameLayout>
+
+                            <!-- Frame for Image 3 -->
+                            <FrameLayout
+                                android:layout_width="200dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:background="@android:color/black">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/image3"
+                                    android:scaleType="centerCrop"/>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <!-- Row 2 (similar structure as Row 1) -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Row 2"
+                        android:textSize="20sp"
+                        android:textColor="#DADADA"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"/>
+
+                    <!-- Horizontal ScrollView for Row 2 Images -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!-- Horizontal StackLayout for Row 2 Images -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!-- Frame for Image 4 -->
+                            <FrameLayout
+                                android:layout_width="200dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:background="@android:color/black">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/image3"
+                                    android:scaleType="centerCrop"/>
+                            </FrameLayout>
+
+                            <!-- Frame for Image 5 -->
+                            <FrameLayout
+                                android:layout_width="200dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:background="@android:color/black">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/image2"
+                                    android:scaleType="centerCrop"/>
+                            </FrameLayout>
+
+                            <!-- Frame for Image 6 -->
+                            <FrameLayout
+                                android:layout_width="200dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:background="@android:color/black">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/image1"
+                                    android:scaleType="centerCrop"/>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <!-- Row 3 (similar structure as Row 1) -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Row 2"
+                        android:textSize="20sp"
+                        android:textColor="#DADADA"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"/>
+
+                    <!-- Horizontal ScrollView for Row 2 Images -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!-- Horizontal StackLayout for Row 2 Images -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!-- Frame for Image 4 -->
+                            <FrameLayout
+                                android:layout_width="200dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:background="@android:color/black">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/image3"
+                                    android:scaleType="centerCrop"/>
+                            </FrameLayout>
+
+                            <!-- Frame for Image 5 -->
+                            <FrameLayout
+                                android:layout_width="200dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:background="@android:color/black">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/image2"
+                                    android:scaleType="centerCrop"/>
+                            </FrameLayout>
+
+                            <!-- Frame for Image 6 -->
+                            <FrameLayout
+                                android:layout_width="200dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:background="@android:color/black">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/image1"
+                                    android:scaleType="centerCrop"/>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

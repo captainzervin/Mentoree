@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- rectangle_1 as an ImageView -->
+        <LinearLayout
+            android:id="@+id/rectangle_1"
+            android:layout_width="380dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="30dp"
+            android:background="#424242"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Sample Image -->
+            <ImageView
+                android:id="@+id/sampleImageInRectangle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/search" />
+
+            <!-- Sample Text -->
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="332dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Search"
+                android:textColor="#C4C4C4"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+        </LinearLayout>
+
+
+        <!-- rectangle_2 with ImageView and TextView -->
+        <RelativeLayout
+            android:id="@+id/rectangle_2"
+            android:layout_width="380dp"
+            android:layout_height="76.23dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rectangle_shape">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <!-- Sample Image -->
+                <ImageView
+                    android:id="@+id/rect1"
+                    android:layout_width="140dp"
+                    android:layout_height="77dp"
+                    android:src="@drawable/rectangle44"
+                    android:layout_centerVertical="true"/>
+
+                <!-- Sample Text -->
+                <TextView
+                    android:id="@+id/sampleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Programming"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:layout_toEndOf="@id/rect1"
+                    android:layout_centerVertical="true"/>
+
+                <!-- Play Circle Image -->
+                <ImageView
+                    android:id="@+id/play1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/play_circle" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rectangle_3"
+            android:layout_width="380dp"
+            android:layout_height="76.23dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_shape">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:padding="8dp">
+
+                <!-- Sample Image -->
+                <ImageView
+                    android:id="@+id/rect2"
+                    android:layout_width="140dp"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/rectangle44" />
+
+                <!-- Sample Text -->
+                <TextView
+                    android:id="@+id/sampleText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/rect2"
+                    android:text="Accounting"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <!-- Play Circle Image -->
+                <ImageView
+                    android:id="@+id/play2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/play_circle" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rectangle_4"
+            android:layout_width="380dp"
+            android:layout_height="76.23dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_shape">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:padding="8dp">
+
+                <!-- Sample Image -->
+                <ImageView
+                    android:id="@+id/rect3"
+                    android:layout_width="140dp"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/rectangle44" />
+
+                <!-- Sample Text -->
+                <TextView
+                    android:id="@+id/sampleText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/rect3"
+                    android:text="Films"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <!-- Play Circle Image -->
+                <ImageView
+                    android:id="@+id/play3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/play_circle" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rectangle_5"
+            android:layout_width="380dp"
+            android:layout_height="76.23dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_shape">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:padding="8dp">
+
+                <!-- Sample Image -->
+                <ImageView
+                    android:id="@+id/rect4"
+                    android:layout_width="140dp"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/rectangle44" />
+
+                <!-- Sample Text -->
+                <TextView
+                    android:id="@+id/sampleText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/rect4"
+                    android:text="Recipies"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <!-- Play Circle Image -->
+                <ImageView
+                    android:id="@+id/play4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/play_circle" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rectangle_6"
+            android:layout_width="380dp"
+            android:layout_height="76.23dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_shape">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:padding="8dp">
+
+                <!-- Sample Image -->
+                <ImageView
+                    android:id="@+id/rect5"
+                    android:layout_width="140dp"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/rectangle44" />
+
+                <!-- Sample Text -->
+                <TextView
+                    android:id="@+id/sampleText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/rect5"
+                    android:text="HAHAHAHAHA"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <!-- Play Circle Image -->
+                <ImageView
+                    android:id="@+id/play5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/play_circle" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rectangle_7"
+            android:layout_width="380dp"
+            android:layout_height="76.23dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_shape">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:padding="8dp">
+
+                <!-- Sample Image -->
+                <ImageView
+                    android:id="@+id/rect6"
+                    android:layout_width="140dp"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/rectangle44" />
+
+                <!-- Sample Text -->
+                <TextView
+                    android:id="@+id/sampleText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/rect6"
+                    android:text="Asdfghjkl"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <!-- Play Circle Image -->
+                <ImageView
+                    android:id="@+id/play6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/play_circle" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

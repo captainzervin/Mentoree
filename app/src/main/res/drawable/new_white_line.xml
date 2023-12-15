@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background shape -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/> <!-- Set the color of the white line -->
+        </shape>
+    </item>
+
+    <!-- Divider line -->
+    <item android:top="1dp"> <!-- Adjust the top padding to control the thickness of the line -->
+        <shape android:shape="rectangle">
+            <solid android:color="#00000000"/> <!-- Set the color of the background, you can use a transparent color -->
+            <size android:height="1dp"/> <!-- Set the height of the white line -->
+        </shape>
+    </item>
+</layer-list>

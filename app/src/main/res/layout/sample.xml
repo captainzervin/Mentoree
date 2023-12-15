@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <RelativeLayout
+            android:layout_width="411dp"
+            android:layout_height="139dp"
+            android:background="@drawable/Heading_Bar">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="107dp"
+                android:layout_marginTop="113dp"
+                android:text="Maria Sofia Castro"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/profile_2"
+            android:layout_width="60dp"
+            android:layout_height="61dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="110dp"
+            app:srcCompat="@drawable/prof" />
+
+
+        <TextView
+            android:id="@+id/sti_dasmari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="108dp"
+            android:layout_marginTop="146dp"
+            android:gravity="top"
+            android:text="STI Dasmarinas"
+            android:textColor="#DADADA"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/app_brief_e"
+            android:layout_width="343dp"
+            android:layout_height="114dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="199dp"
+            android:alpha="0.8"
+            android:gravity="top"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+            />
+
+
+
+    </RelativeLayout>
+</LinearLayout>

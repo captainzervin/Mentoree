@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background shape -->
+    <item>
+        <shape
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shape="rectangle">
+            <!-- You can customize the solid color or other properties here -->
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+
+    <!-- Your drawable -->
+    <item
+        android:id="@+id/fp"
+        android:drawable="@drawable/float_page"
+        android:layout_width="360dp"
+        android:layout_height="290dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="543dp"
+        />
+
+</layer-list>
